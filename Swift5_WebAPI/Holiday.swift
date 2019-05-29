@@ -9,7 +9,7 @@
 import Foundation
 
 struct HolidayResponse: Decodable {
-  var response: [Holidays]
+  var response: Holidays
 }
 
 struct Holidays: Decodable {

@@ -296,7 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KMG5JJ4GXQ;
+				DEVELOPMENT_TEAM = X452LME3NH;
 				INFOPLIST_FILE = Swift5_WebAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,7 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KMG5JJ4GXQ;
+				DEVELOPMENT_TEAM = X452LME3NH;
 				INFOPLIST_FILE = Swift5_WebAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
