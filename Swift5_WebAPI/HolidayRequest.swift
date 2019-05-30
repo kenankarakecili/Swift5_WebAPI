@@ -15,7 +15,7 @@ enum HolidayError: Error {
 
 struct HolidayRequest {
 	let resourceURL: URL
-	let API_KEY = "151c7d2b0f2fb2e9905ef1738ce455875dec226c"
+	let API_KEY = ""
 	
 	init(countryCode :String) {
 		let formatter = DateFormatter()
@@ -28,10 +28,10 @@ struct HolidayRequest {
 	
 	func getHolidays(completion: @escaping (Result<[HolidayDetail], HolidayError>) -> Void) {
 		let dataTask = URLSession.shared.dataTask(with: resourceURL) { (data, _, _) in
-			guard let jsonData = data else { completion(.failure(.noDataAVailable)); return }
+			guard let myData = data else { completion(.failure(.noDataAVailable)); return }
 			do {
 				let decoder = JSONDecoder()
-				let holidayResponse = try decoder.decode(HolidayResponse.self, from: jsonData)
+				let holidayResponse = try decoder.decode(HolidayResponse.self, from: myData)
 				let holidayDetails = holidayResponse.response.holidays
 				completion(.success(holidayDetails))
 			} catch {
